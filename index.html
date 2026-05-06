@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA — Picture of the Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+
+    <header>
+      <div class="logo">
+        <span class="logo-icon">🛸</span>
+        <div>
+          <p class="logo-sub">NASA</p>
+          <h1 class="logo-title">Astronomy Picture of the Day</h1>
+        </div>
+      </div>
+
+      <form id="search-form">
+        <label for="search-input">SELECT A DATE</label>
+        <div class="input-row">
+          <input type="date" id="search-input" required />
+          <button type="submit">EXPLORE</button>
+        </div>
+      </form>
+    </header>
+
+    <main>
+      <section id="current-image-container">
+        <div class="loader" id="loader">
+          <div class="orbit"><div class="planet"></div></div>
+          <p>Contacting Deep Space…</p>
+        </div>
+      </section>
+
+      <aside id="history-panel">
+        <h2 class="history-title">&#9432; Search History</h2>
+        <ul id="search-history"></ul>
+        <p class="history-empty" id="history-empty">No past searches yet.</p>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
